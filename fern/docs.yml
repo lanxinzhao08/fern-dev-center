@@ -79,10 +79,11 @@ theme:
 logo:
   dark: docs/assets/logo-dark.svg
   light: docs/assets/zuora-favicon.png
-  height: 20
-  href: https://buildwithfern.com
+  height: 28
+  right-text: Developer Center
+  href: https://developer.zuora.com
 
-favicon: docs/assets/favicon.svg
+favicon: docs/assets/zuora-favicon.png
 
 css: styles.css
 
