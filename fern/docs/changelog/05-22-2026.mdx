@@ -1,0 +1,48 @@
+---
+title: May 22, 2026
+slug: 05-22-2026
+tags: ["enhancements", "new-features", "doc-fixes"]
+---
+
+
+## API updates
+
+This section lists operations and fields that were added, changed, or removed.
+
+The following API updates are available as of <a href="https://docs.zuora.com/en/release-notes/latest-release" target="_blank">Zuora Release 2026.Q2.0.2</a>.
+
+- [RSA Signatures](https://developer.zuora.com/v1-api-reference/api/rsa-signatures) - In the request body of the "Generate an RSA signature" operation, removed all unsupported fields and kept only the following supported fields:
+  - `accountId`
+  - `authorizationAmount`
+  - `method`
+  - `pageId`
+  - `uri`
+
+- [Custom Object Definitions](https://developer.zuora.com/v1-api-reference/api/custom-object-definitions) - Made the following updates to the "Update a custom object definition" operation for the support of request asynchronous processing:
+  - Updated the operation description.
+  - In the response body, added the `jobId` field.
+
+- [Metadata](https://developer.zuora.com/v1-api-reference/api/Metadata/) - Added the following operations:
+  - Retrieve metadata object schema
+  - List available metadata objects
+
+- [Settings](https://developer.zuora.com/v1-api-reference/api/settings) - Added the `defaultTemplate` field to the POST method request body of the `AllSummaryStatementTemplates` setting.
+
+  See [200 response sample in JSON format](https://developer.zuora.com/settings-api/ListAllSettingsResponseSample.json).
+
+## Doc updates
+
+This section lists the documentation updates that were made in this version of the API Reference.
+
+- Renamed the "Metadata" section in Deployment Manager to "Metadata Deployment" for better consistency.
+
+- In the request body of each of the following operations, corrected the `On-Account Receivable` enum value to `OnAccountReceivable` for the `type` field:
+  - Create an accounting code
+  - Update an accounting code
+
+- In the response body of the "Retrieve an accounting code" operation, corrected the `On-Account Receivable` enum value to `OnAccountReceivable` for the `type` field.
+
+- In the response body of the "List all accounting codes" operation, corrected the `On-Account Receivable` enum value to `OnAccountReceivable` for the `accountingCodes` > `type` field.
+
+- Updated the description of the "List all settings" operation to add the "Invoice Group" section.
+

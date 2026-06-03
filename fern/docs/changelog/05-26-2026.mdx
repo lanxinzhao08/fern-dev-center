@@ -1,0 +1,51 @@
+---
+title: May 26, 2026
+slug: 05-26-2026
+tags: ["enhancements", "doc-fixes"]
+---
+
+## API updates
+
+This section lists operations and fields that were added, changed, or removed.
+
+The following API updates are available as of <a href="https://docs.zuora.com/en/release-notes/latest-release" target="_blank">Zuora Release 2026.Q2.0.2</a>.
+
+- [Billing Documents](https://developer.zuora.com/v1-api-reference/api/billing-documents) - In the request body of the "Generate billing documents by account ID" operation, added the `commitmentKeys` field and updated the corresponding request sample.
+
+- [E-Invoicing](https://developer.zuora.com/v1-api-reference/api/e-invoicing) - For each of the following operations, added the `transactionId` query parameter:
+  - Sync the e-Invoice status of an invoice
+  - Sync the e-Invoice status of a debit memo
+  - Sync the e-Invoice status of a credit memo
+
+## Doc updates
+
+This section lists the documentation updates that were made in this version of the API Reference.
+
+- In the request body of the "Generate billing documents by account ID" operation, corrected the `effectiveDate` and `targetDate` fields from optional to required.
+
+- In the response body of each of the "Create a standalone invoice" and "Create standalone invoices" operations, added the missing nullable schema keyword to each of the following fields on the Invoice object:
+	- `billToContactSnapshotId`
+	- `soldToContactSnapshotId`
+	- `lastEmailSentDate`
+	- `postedBy`
+	- `postedDate`
+	- `transferredToAccounting`
+	
+- In the response body of each of the following operations, added the missing nullable schema keyword to each of the `billToContactId` and `billToContactSnapshotId` fields on the Debit Memo object:
+	- Create debit memos
+	- Create a debit memo from an invoice
+	- Create a debit memo from a charge
+	- Retrieve a debit memo
+	- Update a debit memo
+	- Update debit memos
+	- Cancel a debit memo
+	- Post a debit memo
+	- Unpost a debit memo
+
+- In the request body of the "Update invoices" operation, added the missing `No` enum value to the `invoices` > `transferredToAccounting` field.
+
+- In the request and response body of the "Update an invoice" operation, added the missing `No` enum value to the `transferredToAccounting` field.
+
+- In the request body of the "Update a payment run" operation, removed the incorrectly documented `date-time` format from the `runDate` field.
+
+- Removed the incorrectly documented `date-time` format from each of the `createdDate` and `updatedDate` response fields across multiple operations.

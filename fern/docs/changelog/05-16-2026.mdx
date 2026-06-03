@@ -1,0 +1,26 @@
+---
+title: May 15, 2025
+slug: 05-15-2025
+tags: ["enhancements", "enhancements", "breaking-change", "doc-fixes"]
+---
+
+
+## API updates
+
+This section lists operations and fields that were added, changed, or removed.
+
+The following API updates are available as of <a href="https://docs.zuora.com/en/release-notes/latest-release" target="_blank">Zuora Release 2026.Q2.0.1</a>.
+
+- [Invoices](https://developer.zuora.com/v1-api-reference/api/invoices/) - Added the "Cancel an invoice" operation.
+
+- [Sequence Sets](https://developer.zuora.com/v1-api-reference/api/sequence-sets) - In the request body of the "Create sequence sets" operation, added the `sequenceSets` > `sequenceSetNumber` field.
+
+## Doc updates
+
+This section lists the documentation updates that were made in this version of the API Reference.
+
+- In the response body of the "List payment methods of an account" operation, corrected the `returnedPaymentMethodType` > `creditCardMaskNumber` field to `returnedPaymentMethodType` > `cardNumber`.
+
+- In the response body of the "Retrieve the default payment method of an account" operation, corrected the `creditCardMaskNumber` field to `cardNumber`.
+
+- Removed the incorrectly documented `date-time` format description from all applicable fields across a number of operations.

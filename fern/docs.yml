@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
 
 instances:
-  - url: plantstore.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
+  - url: zuora.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
     # custom-domain: plantstore.dev # specify your custom domain when you are ready to go live
 
 title: Fern Docs Starter
@@ -52,16 +52,7 @@ navigation:
           - page: API reference
             path: docs/pages/api-reference-overview.mdx
             icon: fa-duotone fa-book
-      - api: Plant Store API
-        layout:
-          - section: Plants
-            referenced-packages:
-              - plant
-            contents: []
-          - section: Users
-            referenced-packages:
-              - user
-            contents: []
+      - api: v1 API
 
 navbar-links:
   - type: minimal
@@ -87,7 +78,7 @@ theme:
 
 logo:
   dark: docs/assets/logo-dark.svg
-  light: docs/assets/logo.svg
+  light: docs/assets/zuora-favicon.png
   height: 20
   href: https://buildwithfern.com
 
