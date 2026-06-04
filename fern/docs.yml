@@ -24,12 +24,12 @@ navigation:
     layout:
       - section: Get started
         contents:
-          - page: Welcome
-            path: docs/pages/welcome.mdx
+          - page: Get started with Zuora
+            path: docs/pages/introduction.mdx
             icon: fa-duotone fa-house
-          - page: Edit your docs
-            path: docs/pages/editing-your-docs.mdx
-            icon: fa-duotone fa-pen-to-square
+       #   - page: Zuora Basics
+       #     path: docs/pages/basics.mdx
+       #     icon: fa-duotone fa-pen-to-square
           - page: Write content
             path: docs/pages/writing-content.mdx
             icon: fa-duotone fa-file-lines
