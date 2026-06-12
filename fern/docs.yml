@@ -49,6 +49,9 @@ navigation:
     layout:
       - section: Overview
         contents:
+          - page: API upgrade guide
+            path: docs/pages/api-upgrade-guide.md
+            icon: fa-duotone fa-code-branch
           - page: API reference
             path: docs/pages/api-reference-overview.mdx
             icon: fa-duotone fa-book
